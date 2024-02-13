@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Crear Seguro Servicio">
+  <main class="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/carrito2.jpg');">
+    <div class="bg-white p-12 rounded-md shadow-md w-96">
+      <h1 class="text-3xl font-semibold mb-6">Crear Seguro Servicio</h1>
+
+      <form action="/crearSeguroServicio" method="post">
+        <div class="mb-6">
+          <label for="nombre" class="block text-gray-600 text-sm font-semibold mb-2">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="w-full px-6 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="mb-6">
+          <label for="detalles" class="block text-gray-600 text-sm font-semibold mb-2">Detalles</label>
+          <textarea id="detalles" name="detalles" rows="4" class="w-full px-6 py-2 border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Crear Seguro Servicio</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</Layout>
